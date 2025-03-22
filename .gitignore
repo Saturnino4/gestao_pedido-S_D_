@@ -1,0 +1,30 @@
+# Environment variables and virtual environments
+.env
+venv/
+env/
+ENV/
+
+# Django migrations
+*/migrations/*
+!*/migrations/__init__.py
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Database
+db.sqlite3
+db.sqlite3-journal
+
+# Logs
+*.log
+logs/
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo

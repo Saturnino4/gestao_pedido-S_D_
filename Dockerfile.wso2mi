@@ -1,0 +1,4 @@
+FROM wso2/wso2mi:4.2.0
+
+# Just copy the CAR file without changing permissions
+COPY ./wso2-middleware/wso2-middleware_1.0.0.car /home/wso2carbon/wso2mi-4.2.0/repository/deployment/server/carbonapps/

@@ -1,0 +1,17 @@
+<api context="/pedido" name="PedidoAPI" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" uri-template="/">
+        <inSequence>
+            <call>
+                <endpoint>
+                    <http method="GET" uri-template="http://django:8000/api/v1/pedido"/>
+                </endpoint>
+            </call>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence>
+            <log level="full"/>
+            <respond/>
+        </faultSequence>
+    </resource>
+</api>
