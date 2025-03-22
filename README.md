@@ -42,12 +42,11 @@ Sistema de gerenciamento de pedidos baseado em microserviços construído com Dj
 
 Todos os endpoints são acessíveis através do WSO2 Micro Integrator em http://localhost:8290/pedido/
 
+_________________________________
 | Método | Endpoint | Descrição |
 |--------|----------|-----------|
 | GET    | / | Listar todos os pedidos |
 | POST   | /registrar/ | Criar um novo pedido |
-| PUT    | /{id}/atualizar/ | Atualizar um pedido existente |
-| DELETE | /{id}/eliminar/ | Excluir um pedido |
 | POST   | /{id}/aprovar/ | Aprovar um pedido |
 | POST   | /{id}/reprovar/ | Rejeitar um pedido |
 -----------------------------------------------
